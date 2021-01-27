@@ -25,7 +25,7 @@ SECRET_KEY = '&caqx8d9c+2vw$4(tlgo7_!9x5#l+j+n-c65f#241jve&pp9h1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['http://themba-fruit-shop.herokuapp.com/', 'http://127.0.0.1:8000/']
+ALLOWED_HOSTS = ['themba-fruit-shop.herokuapp.com', '127.0.0.1:8000']
 
 
 # Application definition
