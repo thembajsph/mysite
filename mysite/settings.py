@@ -25,7 +25,7 @@ SECRET_KEY = '&caqx8d9c+2vw$4(tlgo7_!9x5#l+j+n-c65f#241jve&pp9h1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['themba-fruit-shop.herokuapp.com', '127.0.0.1:8000']
+ALLOWED_HOSTS = ['themba-fruit-shop.herokuapp.com', '127.0.0.1:8000', '0.0.0.0']
 
 
 # Application definition
@@ -79,11 +79,15 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd5npl0pjrbp2n8',
+        'HOST': 'ec2-52-22-135-159.compute-1.amazonaws.com',
+        'POST': '5432',
+        'USER':'bqxjuoybzamdby',
+        'PASSWORD': 'f3062bb1af7b46cd5da94e3acae4bea73dd9626435f77a10211c0d225c6fc45e'
     }
 }
-
+# postgres://bqxjuoybzamdby:f3062bb1af7b46cd5da94e3acae4bea73dd9626435f77a10211c0d225c6fc45e@ec2-52-22-135-159.compute-1.amazonaws.com:5432/d5npl0pjrbp2n8
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
