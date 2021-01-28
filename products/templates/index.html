@@ -1,3 +1,4 @@
+{% load static &}
 {% extends 'base.html' %}
 
 {% block content %}
@@ -7,7 +8,7 @@
         {% for product in products %}
             <div class="col">
                 <div class="card" style="width: 18rem;">
-      <img src="{{ product.image_url }}" class="card-img-top" alt="no image">
+      <img src="{{& static product.image_url &}}" class="card-img-top" alt="no image">
       <div class="card-body">
         <h5 class="card-title">{{ product.name }}</h5>
         <p class="card-text">R{{ product.price }}</p>
