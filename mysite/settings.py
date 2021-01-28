@@ -79,15 +79,12 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd5npl0pjrbp2n8',
-        'HOST': 'ec2-52-22-135-159.compute-1.amazonaws.com',
-        'POST': '5432',
-        'USER':'bqxjuoybzamdby',
-        'PASSWORD': 'f3062bb1af7b46cd5da94e3acae4bea73dd9626435f77a10211c0d225c6fc45e'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+
     }
 }
-# postgres://bqxjuoybzamdby:f3062bb1af7b46cd5da94e3acae4bea73dd9626435f77a10211c0d225c6fc45e@ec2-52-22-135-159.compute-1.amazonaws.com:5432/d5npl0pjrbp2n8
+
 
 
 # Password validation
